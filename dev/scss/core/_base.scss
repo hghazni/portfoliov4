@@ -1,0 +1,7 @@
+html, body {
+  color: $accent;
+  font-family: $sawarabi;
+  font-weight: 100;
+  @include antialiasing;
+  background: $primary;
+}

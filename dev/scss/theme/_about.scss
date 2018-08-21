@@ -1,0 +1,17 @@
+.about__wrapper {
+  margin: auto;
+  @include container;
+}
+
+.about {
+
+}
+
+.about__title {
+  margin-bottom: 0;
+  font-size: 48px;
+}
+
+.about__subtitle {
+  font-size: 24px;
+}

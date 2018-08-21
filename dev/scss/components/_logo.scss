@@ -1,0 +1,22 @@
+.logo-link {
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  top: $base-spacing;
+  left: 0;
+
+  .logo_square {}
+
+  h1 {
+    margin: 0;
+
+    &:after {
+      color: $primary;
+      padding: $base-spacing $base-spacing*1.5;
+      content: "|-|";
+      background: $accent;
+    }
+  }
+}

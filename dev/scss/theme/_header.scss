@@ -1,0 +1,10 @@
+.header__wrapper {
+  min-width: 320px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @include container;
+}

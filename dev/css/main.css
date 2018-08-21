@@ -1,0 +1,152 @@
+/**
+ * Output media query block
+ *
+   `@include media-query(min, 640px);`
+ *
+ */
+/**
+ * Output font size using rem and px fallback
+ *
+   `@include font-size(10px);`
+ *
+ */
+/**
+ * Output unstyled list properties
+ *
+   `@include list-reset();`
+ *
+ */
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Sawarabi+Mincho");
+html, body {
+  color: #eae662;
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #061f9a; }
+
+.logo-link {
+  z-index: 1; }
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 0; }
+  .logo h1 {
+    margin: 0; }
+    .logo h1:after {
+      color: #061f9a;
+      padding: 20px 30px;
+      content: "|-|";
+      background: #eae662; }
+
+.header__wrapper {
+  min-width: 320px; }
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1360px;
+  margin: auto; }
+
+footer {
+  max-width: 1360px;
+  margin: auto; }
+
+.copyright {
+  text-align: start; }
+
+.nav {
+  min-width: 320px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 0; }
+  @media only screen and (min-width: 420px) {
+    .nav {
+      top: -10px; } }
+
+.nav__list {
+  display: flex;
+  list-style-type: none; }
+
+.nav__item {
+  margin-right: 13.33333px; }
+  .nav__item:last-of-type {
+    margin-right: 15px; }
+
+.nav__link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #eae662;
+  font-weight: bold; }
+  .nav__link:hover {
+    text-decoration: underline;
+    color: #eae662; }
+
+.hero {
+  max-width: 1360px;
+  margin: auto;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.hero__subtitle {
+  margin: 0;
+  font-size: 20px; }
+  @media only screen and (min-width: 1015px) {
+    .hero__subtitle {
+      font-size: 25px; } }
+
+.hero__title {
+  margin: 0;
+  width: 100%;
+  border-bottom: solid 2px #eae662;
+  display: inherit;
+  font-size: 50px;
+  font-weight: 700; }
+  @media only screen and (min-width: 1015px) {
+    .hero__title {
+      font-size: 90px; } }
+  .hero__title:nth-of-type(2) {
+    justify-content: flex-end;
+    width: max-content; }
+
+.hero__image {
+  background-image: url("../assets/harry-hero.jpg");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  display: none; }
+
+.hero__link {
+  text-decoration: none;
+  color: #eae662; }
+  .hero__link:hover {
+    text-decoration: underline; }
+
+.about__wrapper {
+  margin: auto;
+  max-width: 1360px;
+  margin: auto; }
+
+.about__title {
+  margin-bottom: 0;
+  font-size: 48px; }
+
+.about__subtitle {
+  font-size: 24px; }
+
+.work__wrapper {
+  max-width: 1360px;
+  margin: auto; }
+
+.contact__wrapper {
+  max-width: 1360px;
+  margin: auto; }

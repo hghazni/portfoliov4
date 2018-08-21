@@ -1,0 +1,36 @@
+.nav {
+  min-width: 320px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 0;
+
+  @include media-query(min, $palm-start) {
+    top: -10px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__item {
+  margin-right: $base-spacing/1.5;
+
+  &:last-of-type {
+    margin-right: $base-spacing/2+5;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 22px;
+  color: $accent;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+    color: $accent;
+  }
+}
