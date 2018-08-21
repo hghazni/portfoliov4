@@ -136,6 +136,9 @@ footer {
   max-width: 1360px;
   margin: auto; }
 
+.about p {
+  font-size: 20px; }
+
 .about__title {
   margin-bottom: 0;
   font-size: 48px; }
