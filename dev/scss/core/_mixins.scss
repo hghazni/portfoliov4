@@ -6,6 +6,10 @@
 @mixin container {
   max-width: $page-width;
   margin: auto;
+
+  @include media-query(min, $lap-start) {
+    padding: 0 $base-spacing*5;
+  }
 }
 
 @mixin uppercase($spacing: $uppercase-spacing) {
@@ -19,12 +23,6 @@
   align-items: center;
 }
 
-/**
- * Output media query block
- *
-   `@include media-query(min, 640px);`
- *
- */
 @mixin media-query($type, $breakpoint: $lap-start) {
   @if $type == "min" {
     @media only screen and (min-width: $breakpoint) {
