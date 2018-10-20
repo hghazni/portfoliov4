@@ -3,7 +3,17 @@
   height: 70vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column-reverse;
+
+  @include media-query(min, $lap-start) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  @include media-query(min, $desk-start) {
+    justify-content: space-around;
+  }
 
 }
 
@@ -41,9 +51,31 @@
   .hero__image {
     background-image: url('../assets/harry-hero.jpg');
     background-size: cover;
-    width: 300px;
-    height: 300px;
-    display: none;
+    width: 250px;
+    height: 250px;
+    border-radius: 50% 30% 20% 60% / 30% 40% 50% 70%;
+
+    &:hover {
+      animation: square-to-circle 2s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    }
+
+    @keyframes square-to-circle {
+      0%  {
+        border-radius: 50% 30% 20% 60% / 30% 40% 50% 70%;
+      }
+      25%  {
+        border-radius: 50% 10% 40% 10% / 30% 40% 50% 70%;
+      }
+      50%  {
+        border-radius: 50% 10% 40% 40% / 50% 40% 50% 70%;
+      }
+      75%  {
+        border-radius: 50% 10% 40% 40% / 50% 40% 20% 30%;
+      }
+      100% {
+        border-radius: 50% 10% 20% 60% / 30% 40% 50% 70%;
+      }
+    }
   }
 
   .hero__link {

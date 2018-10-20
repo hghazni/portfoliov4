@@ -4,8 +4,10 @@
 
 .logo {
   position: absolute;
-  top: $base-spacing;
+  top: 18px;
   left: 0;
+
+  &:hover {}
 
   .logo_square {}
 

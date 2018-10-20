@@ -16,27 +16,27 @@
 @import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Sawarabi+Mincho");
 html, body {
-  color: #eae662;
+  color: black;
   font-family: "Sawarabi Mincho", sans-serif;
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #061f9a; }
+  background: #dde425; }
 
 .logo-link {
   z-index: 1; }
 
 .logo {
   position: absolute;
-  top: 20px;
+  top: 18px;
   left: 0; }
   .logo h1 {
     margin: 0; }
     .logo h1:after {
-      color: #061f9a;
+      color: #dde425;
       padding: 20px 30px;
       content: "|-|";
-      background: #eae662; }
+      background: black; }
 
 .work-gallery__grid {
   display: grid;
@@ -48,7 +48,7 @@ html, body {
 
 .work-gallery__item {
   display: block;
-  background: red;
+  background: black;
   height: 300px;
   width: 100%; }
   .work-gallery__item:hover {
@@ -68,11 +68,11 @@ header {
   justify-content: flex-end;
   align-items: center; }
 
-footer {
+.footer__wrapper {
   max-width: 1360px;
   margin: auto; }
   @media only screen and (min-width: 765px) {
-    footer {
+    .footer__wrapper {
       padding: 0 100px; } }
 
 .copyright {
@@ -100,11 +100,11 @@ footer {
 .nav__link {
   text-decoration: none;
   font-size: 22px;
-  color: #eae662;
+  color: black;
   font-weight: bold; }
   .nav__link:hover {
     text-decoration: underline;
-    color: #eae662; }
+    color: black; }
 
 .hero {
   max-width: 1360px;
@@ -112,10 +112,18 @@ footer {
   height: 70vh;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: center;
+  flex-direction: column-reverse; }
   @media only screen and (min-width: 765px) {
     .hero {
       padding: 0 100px; } }
+  @media only screen and (min-width: 765px) {
+    .hero {
+      justify-content: space-between;
+      flex-direction: row; } }
+  @media only screen and (min-width: 1015px) {
+    .hero {
+      justify-content: space-around; } }
 
 .hero__subtitle {
   margin: 0;
@@ -127,7 +135,7 @@ footer {
 .hero__title {
   margin: 0;
   width: 100%;
-  border-bottom: solid 2px #eae662;
+  border-bottom: solid 2px black;
   display: inherit;
   font-size: 50px;
   font-weight: 700; }
@@ -141,13 +149,27 @@ footer {
 .hero__image {
   background-image: url("../assets/harry-hero.jpg");
   background-size: cover;
-  width: 300px;
-  height: 300px;
-  display: none; }
+  width: 250px;
+  height: 250px;
+  border-radius: 50% 30% 20% 60% / 30% 40% 50% 70%; }
+  .hero__image:hover {
+    animation: square-to-circle 2s 0.5s infinite cubic-bezier(1, 0.015, 0.295, 1.225) alternate; }
+
+@keyframes square-to-circle {
+  0% {
+    border-radius: 50% 30% 20% 60% / 30% 40% 50% 70%; }
+  25% {
+    border-radius: 50% 10% 40% 10% / 30% 40% 50% 70%; }
+  50% {
+    border-radius: 50% 10% 40% 40% / 50% 40% 50% 70%; }
+  75% {
+    border-radius: 50% 10% 40% 40% / 50% 40% 20% 30%; }
+  100% {
+    border-radius: 50% 10% 20% 60% / 30% 40% 50% 70%; } }
 
 .hero__link {
   text-decoration: none;
-  color: #eae662; }
+  color: black; }
   .hero__link:hover {
     text-decoration: underline; }
 
