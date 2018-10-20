@@ -1,15 +1,69 @@
 .contact__wrapper {
   @include container;
-}
 
-.contact {
+  input {
+    font-size: 18px;
+    height: 35px;
+    color: $primary;
+    border: solid 2px $primary;
+    background: $accent;
+    border-radius: 3px;
+    padding: 0 $base-spacing/2;
 
-}
+    &:focus {
+      outline: 0;
+      border-bottom: 2px solid orangered;
+    }
 
-.contact__title {
+  }
 
-}
+  .contact {
+    max-width: $lap-start;
+  }
 
-.contact__subtitle {
+  .contact__title {
+
+  }
+
+  .contact__subtitle {
+
+  }
+
+  .contact__form-message {
+
+    textarea {
+      font-size: 14px;
+      color: $primary;
+      background-color: $accent;
+      border: solid 2px $primary;
+      font-size: 18px;
+      border-radius: 5px;
+      padding: $base-spacing/2;
+
+      &:focus {
+        outline: none;
+        border-bottom: solid 2px orangered;
+      }
+    }
+
+  }
+
+  .contact__form-name, .contact__form-email, .contact__form-message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $base-spacing/2;
+  }
+
+  //Submit button
+  .contact-submit-btn {
+    height: 50px;
+    width: 100%;
+    padding: 0 $base-spacing*3;
+
+    &:hover {
+      background: darken($primary, 40%);
+      cursor: pointer;
+    }
+  }
 
 }

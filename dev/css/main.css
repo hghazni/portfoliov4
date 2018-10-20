@@ -57,8 +57,19 @@ html, body {
     .work-gallery__item:hover > .work-gallery__item--label {
       visibility: visible; }
 
+.work-gallery__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+
+.work-gallery__item--title {
+  color: white;
+  margin: 0; }
+
 .work-gallery__item--label {
-  visibility: hidden; }
+  color: white; }
 
 .header__wrapper {
   min-width: 320px; }
@@ -153,19 +164,15 @@ header {
   height: 250px;
   border-radius: 50% 30% 20% 60% / 30% 40% 50% 70%; }
   .hero__image:hover {
-    animation: square-to-circle 2s 0.5s infinite cubic-bezier(1, 0.015, 0.295, 1.225) alternate; }
+    animation: square-to-circle 1s 0.5s cubic-bezier(1, 0.015, 0.295, 1.225) alternate; }
 
 @keyframes square-to-circle {
   0% {
     border-radius: 50% 30% 20% 60% / 30% 40% 50% 70%; }
-  25% {
-    border-radius: 50% 10% 40% 10% / 30% 40% 50% 70%; }
   50% {
-    border-radius: 50% 10% 40% 40% / 50% 40% 50% 70%; }
-  75% {
-    border-radius: 50% 10% 40% 40% / 50% 40% 20% 30%; }
+    border-radius: 50% 10% / 10% 50%; }
   100% {
-    border-radius: 50% 10% 20% 60% / 30% 40% 50% 70%; } }
+    border-radius: 50% 30% 20% 60% / 30% 40% 50% 70%; } }
 
 .hero__link {
   text-decoration: none;
@@ -204,3 +211,38 @@ header {
   @media only screen and (min-width: 765px) {
     .contact__wrapper {
       padding: 0 100px; } }
+  .contact__wrapper input {
+    font-size: 18px;
+    height: 35px;
+    color: #dde425;
+    border: solid 2px #dde425;
+    background: black;
+    border-radius: 3px;
+    padding: 0 10px; }
+    .contact__wrapper input:focus {
+      outline: 0;
+      border-bottom: 2px solid orangered; }
+  .contact__wrapper .contact {
+    max-width: 765px; }
+  .contact__wrapper .contact__form-message textarea {
+    font-size: 14px;
+    color: #dde425;
+    background-color: black;
+    border: solid 2px #dde425;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px; }
+    .contact__wrapper .contact__form-message textarea:focus {
+      outline: none;
+      border-bottom: solid 2px orangered; }
+  .contact__wrapper .contact__form-name, .contact__wrapper .contact__form-email, .contact__wrapper .contact__form-message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; }
+  .contact__wrapper .contact-submit-btn {
+    height: 50px;
+    width: 100%;
+    padding: 0 60px; }
+    .contact__wrapper .contact-submit-btn:hover {
+      background: #353607;
+      cursor: pointer; }
