@@ -21,7 +21,7 @@ html, body {
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #dde425; }
+  background: #ffe000; }
 
 .logo-link {
   z-index: 1; }
@@ -33,7 +33,7 @@ html, body {
   .logo h1 {
     margin: 0; }
     .logo h1:after {
-      color: #dde425;
+      color: #ffe000;
       padding: 20px 30px;
       content: "|-|";
       background: black; }
@@ -214,8 +214,8 @@ header {
   .contact__wrapper input {
     font-size: 18px;
     height: 35px;
-    color: #dde425;
-    border: solid 2px #dde425;
+    color: #ffe000;
+    border: solid 2px #ffe000;
     background: black;
     border-radius: 3px;
     padding: 0 10px; }
@@ -226,9 +226,9 @@ header {
     max-width: 765px; }
   .contact__wrapper .contact__form-message textarea {
     font-size: 14px;
-    color: #dde425;
+    color: #ffe000;
     background-color: black;
-    border: solid 2px #dde425;
+    border: solid 2px #ffe000;
     font-size: 18px;
     border-radius: 5px;
     padding: 10px; }
@@ -244,5 +244,5 @@ header {
     width: 100%;
     padding: 0 60px; }
     .contact__wrapper .contact-submit-btn:hover {
-      background: #353607;
+      background: #332d00;
       cursor: pointer; }
