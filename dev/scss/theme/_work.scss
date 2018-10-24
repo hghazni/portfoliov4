@@ -1,5 +1,8 @@
 .work__wrapper {
-  @include container;
+
+  @include media-query(min, $desk-start) {
+    @include container;
+  }
 }
 
 .work {

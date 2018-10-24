@@ -45,12 +45,34 @@ html, body {
   list-style-type: none;
   grid-gap: 10px;
   padding: 0; }
+  @media only screen and (min-width: 765px) {
+    .work-gallery__grid {
+      grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); } }
 
 .work-gallery__item {
   display: block;
   background: black;
   height: 300px;
   width: 100%; }
+  @media only screen and (min-width: 765px) {
+    .work-gallery__item:nth-of-type(1) {
+      display: grid;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      height: 100%;
+      background: red !important; }
+    .work-gallery__item:nth-of-type(3) {
+      display: grid;
+      grid-row: 2 / span 2;
+      grid-column: 2 / span 2;
+      height: 100%;
+      background: red !important; }
+    .work-gallery__item:nth-of-type(4) {
+      display: grid;
+      grid-row: 1 / 2;
+      grid-column: 1 / span 2;
+      height: 100%;
+      background: red !important; } }
   .work-gallery__item:hover {
     opacity: 0.8;
     cursor: pointer; }
@@ -198,10 +220,11 @@ header {
 .about__subtitle {
   font-size: 24px; }
 
-.work__wrapper {
-  max-width: 1360px;
-  margin: auto; }
-  @media only screen and (min-width: 765px) {
+@media only screen and (min-width: 1015px) {
+  .work__wrapper {
+    max-width: 1360px;
+    margin: auto; } }
+  @media only screen and (min-width: 1015px) and (min-width: 765px) {
     .work__wrapper {
       padding: 0 100px; } }
 
