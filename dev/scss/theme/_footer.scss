@@ -1,5 +1,9 @@
 .footer__wrapper {
   @include container;
+   
+  @include media-query(min, $lap-start) {
+    @include container; 
+  }
 }
 
 .copyright {

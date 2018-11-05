@@ -76,8 +76,25 @@ html, body {
   .work-gallery__item:hover {
     opacity: 0.8;
     cursor: pointer; }
+    .work-gallery__item:hover.fullscreen {
+      opacity: 1; }
     .work-gallery__item:hover > .work-gallery__item--label {
       visibility: visible; }
+  .work-gallery__item.fullscreen {
+    width: 100%;
+    height: 300vh;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    @media only screen and (min-width: 765px) {
+      .work-gallery__item.fullscreen {
+        height: 200vh; } }
+    .work-gallery__item.fullscreen .work-gallery__item--content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
 
 .work-gallery__item-wrapper {
   display: flex;
@@ -105,6 +122,13 @@ header {
   max-width: 1360px;
   margin: auto; }
   @media only screen and (min-width: 765px) {
+    .footer__wrapper {
+      padding: 0 100px; } }
+  @media only screen and (min-width: 765px) {
+    .footer__wrapper {
+      max-width: 1360px;
+      margin: auto; } }
+  @media only screen and (min-width: 765px) and (min-width: 765px) {
     .footer__wrapper {
       padding: 0 100px; } }
 
