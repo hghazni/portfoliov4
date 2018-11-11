@@ -30,6 +30,8 @@ html, body {
   position: absolute;
   top: 18px;
   left: 0; }
+  .logo.active {
+    position: fixed; }
   .logo h1 {
     margin: 0; }
     .logo h1:after {
@@ -143,6 +145,9 @@ html, body {
 .work-gallery__item--label {
   color: white;
   padding: 4px; }
+
+.noscroll {
+  overflow: hidden; }
 
 .grid-wrap {
   margin: 10px auto 0;
@@ -330,7 +335,7 @@ p.dummy-text:nth-child(3) {
 .dummy-img {
   height: 400px;
   background-color: #ddd;
-  margin: 30px auto; }
+  margin: 100px auto; }
 
 .dummy-text {
   text-align: left;
@@ -430,7 +435,7 @@ header {
 .hero {
   max-width: 1360px;
   margin: auto;
-  height: 70vh;
+  margin: 60px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,6 +445,7 @@ header {
       padding: 0 100px; } }
   @media only screen and (min-width: 765px) {
     .hero {
+      height: 70vh;
       justify-content: space-between;
       flex-direction: row; } }
   @media only screen and (min-width: 1015px) {
@@ -458,7 +464,7 @@ header {
   width: 100%;
   border-bottom: solid 2px black;
   display: inherit;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700; }
   @media only screen and (min-width: 1015px) {
     .hero__title {

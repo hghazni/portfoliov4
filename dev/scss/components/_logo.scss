@@ -7,6 +7,10 @@
   top: 18px;
   left: 0;
 
+  &.active {
+    position: fixed;
+  }
+
   &:hover {}
 
   .logo_square {}

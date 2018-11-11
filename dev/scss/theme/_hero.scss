@@ -1,12 +1,13 @@
 .hero {
   @include container;
-  height: 70vh;
+  margin: $base-spacing*3 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
 
   @include media-query(min, $lap-start) {
+    height: 70vh;
     justify-content: space-between;
     flex-direction: row;
   }
@@ -35,7 +36,7 @@
   width: 100%;
   border-bottom: solid 2px $accent;
   display: inherit;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700;
 
   @include media-query(min, $desk-start) {

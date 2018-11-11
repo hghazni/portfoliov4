@@ -52,12 +52,14 @@
 		this.gridItems.forEach( function( item, idx ) {
 			item.addEventListener( 'click', function() {
 				self._showContent( idx );
+				$('.logo').toggleClass('active');
 			} );
 		} );
 
 		// close the content element
 		this.close.addEventListener( 'click', function() {
 			self._hideContent();
+            $('.logo').toggleClass('active');
 		} );
 
 		if( this.support ) {
