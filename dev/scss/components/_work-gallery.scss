@@ -101,9 +101,9 @@
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   z-index: 999;
 }
 
@@ -118,12 +118,12 @@
 .work-gallery__item--title {
   color: white;
   margin: 0;
-  //background: black;
+  background: black;
   padding: $base-spacing/5;
 }
 
 .work-gallery__item--label {
   color: white;
-  //background: black;
+  background: black;
   padding: $base-spacing/5;
 }
