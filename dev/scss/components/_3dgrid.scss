@@ -34,6 +34,7 @@
 }
 
 .placeholder > div {
+  background: $accent;
   display: block;
   position: absolute;
   width: 100%;
@@ -43,7 +44,7 @@
 }
 
 .placeholder .back {
-  background: white;
+  background: $accent;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
@@ -76,7 +77,6 @@
 .content {
   overflow-y: scroll;
   height: 0; /* What seems to be the problem, officer? Well, we have a second scroll bar in Chrome! */
-  background: #fff;
   visibility: hidden;
   z-index: 400;
   -webkit-overflow-scrolling: touch;
@@ -102,6 +102,7 @@
   height: auto;
   pointer-events: auto;
   visibility: visible;
+  background: black;
 }
 
 .content > div {
@@ -112,7 +113,7 @@
   overflow: hidden;
   height: 0;
   opacity: 0;
-  background: #fff;
+  background: black;
 }
 
 .content > div.show {
@@ -137,20 +138,23 @@
 .close-content {
   position: fixed;
   z-index: 1000;
-  top: 0;
-  right: 10px;
+  top: $base-spacing*2;
+  right: $base-spacing*2;
   font-size: 1.6em;
-  color: #aaa;
   cursor: pointer;
   pointer-events: none;
-  padding: 1em;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  height: $base-spacing;
+  width: $base-spacing;
+  background-image: url("../assets/letter-x.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .close-content:hover {
-  color: #999;
+
 }
 
 .content > div.show ~ .close-content {
@@ -159,7 +163,7 @@
 }
 
 .close-content:before {
-  content: "\e602";
+
 }
 
 /* Dummy content */

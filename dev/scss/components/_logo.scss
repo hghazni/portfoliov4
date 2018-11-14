@@ -9,6 +9,11 @@
 
   &.active {
     position: fixed;
+
+    :after {
+      color: $accent;
+      background: $primary;
+    }
   }
 
   &:hover {}
