@@ -21,7 +21,8 @@ html, body {
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #ffe000; }
+  background: #ffe000;
+  margin: 0; }
 
 .logo-link {
   z-index: 9999; }
