@@ -496,46 +496,6 @@ header {
 .h-shape {
   position: absolute;
   display: flex; }
-  .h-shape .hero__shape {
-    position: absolute;
-    width: 150px;
-    height: 300px;
-    border-bottom: 80px solid #061f9a;
-    border-right: 80px solid #031257;
-    border-top: none;
-    border-left: none; }
-    .h-shape .hero__shape:nth-of-type(2) {
-      width: 350px;
-      height: 400px;
-      border-bottom: 80px solid #061f9a;
-      border-right: 80px solid #031257;
-      transform: rotate(180deg);
-      top: 20px; }
-    .h-shape .hero__shape:nth-of-type(3) {
-      border-bottom: 80px solid #061f9a;
-      border-right: 80px solid #031257;
-      transform: rotate(270deg);
-      top: 100px; }
-    .h-shape .hero__shape:nth-of-type(4) {
-      border-bottom: 80px solid #061f9a;
-      border-right: 80px solid #031257;
-      transform: rotate(90deg);
-      top: 50px; }
-    .h-shape .hero__shape:nth-of-type(5) {
-      border-bottom: 80px solid #031257;
-      border-right: 80px solid #061f9a;
-      transform: rotate(270deg);
-      top: 30px; }
-    .h-shape .hero__shape:nth-of-type(6) {
-      border-bottom: 80px solid #061f9a;
-      border-right: 80px solid #031257;
-      transform: rotate(0deg);
-      top: 10px; }
-    .h-shape .hero__shape:nth-of-type(7) {
-      border-bottom: 80px solid #061f9a;
-      border-right: 80px solid #031257;
-      transform: rotate(270deg);
-      top: 70px; }
 
 .about__wrapper {
   margin: auto;
@@ -554,6 +514,10 @@ header {
 
 .about__subtitle {
   font-size: 24px; }
+
+.about__link {
+  text-decoration: none;
+  color: #aec8ff; }
 
 @media only screen and (min-width: 1015px) {
   .work__wrapper {
@@ -581,7 +545,8 @@ header {
       outline: 0;
       border-bottom: 2px solid orangered; }
   .contact__wrapper .contact {
-    max-width: 765px; }
+    max-width: 765px;
+    margin: auto; }
   .contact__wrapper .contact__form-message textarea {
     font-size: 14px;
     color: #0722a9;
