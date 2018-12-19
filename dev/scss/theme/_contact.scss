@@ -1,5 +1,6 @@
 .contact__wrapper {
   @include container;
+  padding: $base-spacing;
 
   input {
     font-size: 18px;
@@ -7,7 +8,7 @@
     color: $primary;
     border: solid 2px $primary;
     background: $accent;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 0 $base-spacing/2;
 
     &:focus {
